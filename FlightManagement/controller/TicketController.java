@@ -22,11 +22,11 @@ public class TicketController {
         for (Flight flight : flights) {
             List<City> via = flight.getVia();
             boolean flag = false;
-            int km = 0, start = 0;
+            int miles = 0, start = 0;
             for (City city : via) {
                 if (Objects.equals(city.getCityName(), fromStation)) flag = true;
                 else if (flag) {
-                    km += city.getMilesFromDestination();
+                    miles += city.getMilesFromDestination();
                     if (Objects.equals(city.getCityName(), toStation)) flag = false;
                 }
             }
