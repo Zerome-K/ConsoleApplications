@@ -8,7 +8,6 @@ import java.util.List;
 
 public class FlightController {
     private final FlightView flightView;
-
     public FlightController(FlightView flightView) {
         this.flightView = flightView;
     }
@@ -16,13 +15,13 @@ public class FlightController {
         List<Flight> flights = DataBase.getInstance().getFlights();
         flights.add(flight);
         DataBase.getInstance().setFlights(flights);
-        String message = "FLIGHT ADDED SUCCESSFULLY";
+        String message = "SCHEDULE ADDED";
         flightView.displayMessage(message);
     }
     public void listRoutes(int number) {
         for (Flight flight : DataBase.getInstance().getFlights()) {
             if (flight.getFlightNumber() == number) {
-                flightView.displayMessage(flight.getVia().toString());
+                flightView.displayRoutes(flight.getRoutes());
                 break;
             }
         }
