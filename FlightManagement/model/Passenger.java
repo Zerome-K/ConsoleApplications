@@ -3,7 +3,6 @@ package flightmanagementsystem.model;
 public class Passenger {
     private int passengerId;
     private String name;
-    private String phoneNumber;
     private int age;
     private String gender;
 
@@ -21,14 +20,6 @@ public class Passenger {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 
     public int getAge() {

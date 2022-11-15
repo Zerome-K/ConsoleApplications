@@ -7,18 +7,18 @@ public class Flight {
     private String flightName;
     private String source;
     private String destination;
-    private int cost;
+    private int fare;
     private int totalSeats;
     private String  departureTime;
     private String  arrivalTime;
-    private List<City> via;
+    private List<City> routes;
 
-    public int getCost() {
-        return cost;
+    public int getFare() {
+        return fare;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setFare(int fare) {
+        this.fare = fare;
     }
     public int getFlightNumber() {
         return flightNumber;
@@ -76,11 +76,11 @@ public class Flight {
         this.arrivalTime = arrivalTime;
     }
 
-    public List<City> getVia() {
-        return via;
+    public List<City> getRoutes() {
+        return routes;
     }
 
-    public void setVia(List<City> via) {
-        this.via = via;
+    public void setRoutes(List<City> routes) {
+        this.routes = routes;
     }
 }
