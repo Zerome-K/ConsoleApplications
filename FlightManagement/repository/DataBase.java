@@ -9,18 +9,16 @@ import java.util.List;
 
 public class DataBase {
     private static DataBase dataBase = null;
-
-    private DataBase() {}
-
-    public static DataBase getInstance(){
-        if (dataBase != null)
-            dataBase = new DataBase();
-        return dataBase;
-    }
-
     private List<Flight> flights = new ArrayList<>();
     private List<Passenger> passengers = new ArrayList<>();
     private List<Ticket> tickets = new ArrayList<>();
+    private DataBase() {}
+
+    public static DataBase getInstance(){
+        if (dataBase == null)
+            dataBase = new DataBase();
+        return dataBase;
+    }
 
     public List<Passenger> getPassengers() {
         return passengers;
