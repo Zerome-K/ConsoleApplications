@@ -20,16 +20,16 @@
   - View Classes        : FlightView,TicketView
   
   POJOS -> 
-      1. Handles the flight datas, Passenger datas, City datas, Ticket info
-      2. flight class having basic info about flight name-number-source-departure-... by this we can access the flight details
-      3. Passenger class having the information about passenger name, id, contact
-      4. City class can be used to store the flight travelling cities we can add extra info in every city airports in future.
+    -  Handles the flight datas, Passenger datas, City datas, Ticket info
+    -  flight class having basic info about flight name-number-source-departure-... by this we can access the flight details
+    -  Passenger class having the information about passenger name, id, contact
+    -  City class can be used to store the flight travelling cities we can add extra info in every city airports in future.
   CONTROLLER ->
-      1. Flight Controller handles the all the flight accessing methods like addFlight(), flightvia(), showFlight().
-      2. Ticket controller is for booking activites some functions are bookflight(), checkAvailableflight().
+    -  Flight Controller handles the all the flight accessing methods like addFlight(), flightvia(), showFlight().
+    - Ticket controller is for booking activites some functions are bookflight(), checkAvailableflight().
   VIEWs -> 
-      1. FlightView interact with users for flight side activities.
-      2. TicketView interact with users for booking related activities.
+    -  FlightView interact with users for flight side activities.
+    -  TicketView interact with users for booking related activities.
       
 Technology Used:
 
